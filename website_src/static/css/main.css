@@ -1,0 +1,180 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+ @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+ @import url(http://fonts.googleapis.com/css?family=Raleway:300,400,700);
+
+body {
+  background-color: #eee;
+  font-family: 'Lato', Helvetica, sans-serif;
+}
+
+h1, h2, h3,   h4  {
+
+  font-family: "Raleway", Helvetica, sans-serif;
+}
+
+@-moz-document url-prefix() {
+    body {
+      line-height: 1.4;
+    }
+}
+
+.navbar {
+  background-color: aliceblue;
+  background-image: none;
+}
+
+.jumbotron {
+    background-color: #ccffcc;
+    padding: 0;
+    margin-bottom: 0;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.box {
+  background-color: white;
+  padding: 1em;
+  border: 1px solid #ddd;
+  /*margin: 2px;*/
+}
+
+.box.main-box {
+  min-height: 366px;
+}
+.box.second-box {
+    min-height: 230px;
+    /*max-height: 238px;*/
+    overflow: hidden;
+}
+.box.third-box {
+    min-height: 283px;
+
+
+    overflow: hidden;
+}
+
+.box.fourth-box {
+    min-height: 122px;
+        max-height: 360px;
+    /*margin-bottom: 10.5px;*/
+}
+
+
+.main-box, .second-box, .third-box, .fourth-box {
+
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+  /*margin: 2px;*/
+}
+
+.main-box:hover, .second-box:hover, .third-box:hover, .fourth-box:hover {
+  background-color: #ccffcc;
+  cursor: pointer;
+}
+
+
+.parent {
+  position: relative;
+  overflow: hidden;
+}
+
+.child {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.child > .box {
+  height: inherit;
+}
+
+.clearfix {
+  clear:left;
+
+}
+
+.pull-right-sm {
+    float: none;
+}
+
+/*Firefox fix*/
+
+@media (max-width: 1200px) {
+    .row .col-sm-3 > .pull-right {
+        float: none !important;
+    }
+}
+
+/* MD editor*/
+
+#markItUpId_body, #markItUpId_abstract {
+  width: 100%;
+}
+#id_body, #id_abstract {
+  width: 100%;
+}
+
+/* banner header */
+
+.banner {
+    background: #009897;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: 65px;
+}
+
+.banner h2 {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.centered {
+    text-align: center;
+}
+
+/* override bootstrap conaider less  */
+
+.navbar {
+    font-weight: 800;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-inverse{
+
+}
+
+
+.btn-primary {
+  background-color: transparent;;
+  background-image: none;
+  border-radius: 0px;
+  border-color: black;
+}
+
+a.btn-primary  {
+  color:black;
+}
+
+.btn, .btn-primary  {
+  border-radius: 0px,
+  -webkit-transition: background-color 1s ease-out;
+  -moz-transition: background-color 1s ease-out;
+  -o-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+.btn:hover, .btn-primary:hover, .btn-primary:focus {
+  background-color: #00000;
+  cursor: pointer;
+}
